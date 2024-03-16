@@ -1,0 +1,165 @@
+// コンテンツ
+.c-container{
+	width: 100vw;
+	height: auto;
+}
+
+.c-contents{
+	&-inner{
+		width: 90%;
+		margin: auto;
+		@include min(768){
+			width: 95%;
+		}
+	}
+
+	&.-h-logo{
+		position: relative;
+		.c-contentsBox{
+			position: absolute;
+			// ヘッダーロゴ
+			&.-logo{
+				&-item01{//緑色の鳥
+					top: 51%;
+					left: 101.5%;
+					width: 6.5%;
+					@include min(768){
+						top: 17.5%;
+						left: 30.8%;
+						width: 2.3%;
+					}
+				}
+				&-item02{//黄色の鳥
+					top: 32%;
+					left: 110%;
+					width: 5%;
+					@include min(768){
+						top: 10%;
+						left: 33%;
+						width: 1.5%;
+					}
+				}
+			}
+			// SOLD OUT
+			&.-soldOut{
+				top: 36%;
+				left: 45%;
+				transform: rotate(-5deg) translate(-50%, -50%);
+				width: 70%;
+				z-index: 99;
+				filter: drop-shadow(1px 1px 2px rgb(128, 128, 128));
+				img{background: $sold-out;}
+				@include min(768){
+					top: 41%;
+					left: 63%;
+					width: 40%;
+				}
+			}
+		}
+	}
+
+	&.-f-slider,//スライダー
+	&.-f-view{  //ファーストビュー
+		width: 100%;
+		height: auto;
+		@include min(768){
+			// min-height: 480px;
+		}
+	}
+	&.-f-slider{// スライダー
+		position: relative;
+		.c-contentsBox{
+			position: absolute;
+			// ファーストビュー×スライダー関係
+			&.-f-title{
+				top: 27%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 80%;
+				filter: drop-shadow(.5px .5px 0px #ffffff6c);
+				@include min(768){// tb
+					top: 50%;
+					left: 80%;
+					width: 33%;
+				}
+				@include min(1400){
+					top: 50%;
+					left: 70%;
+					width: 30%;
+				}
+			}
+			&.-f-des{
+				bottom: 1px;
+				left: 90%;
+				transform: translateX(-50%);
+				white-space: nowrap;
+				// width: auto;
+				@include min(768){
+					left: 60%;
+					transform: scale(.8);
+				}
+				&.-w{
+					@include min(768){
+						left: 53%;
+					}
+					@include min(1400){
+						left: 72%;
+					}
+				}
+			}
+			&.-logo_top{
+				filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.192));
+				@include max(768){
+					top: 2%;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 80%;
+				}
+			}
+			&.-logo_btm{
+				@include max(768){
+					top: 63%;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 80%;
+				}
+			}
+		}
+	}
+	&.-f-view{//ファーストビュー
+		position: relative;
+		overflow: hidden;
+		.imgBox{
+			@include max(768){
+				// opacity: .75;
+			}
+		}
+		.c-contentsBox{
+			position: absolute;
+			&.-accent{
+				filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.541));
+				@include min(768){
+					top: 0;
+					left: 2%;
+					width: 2.5%;
+				}
+			}
+			&.-logo_left{
+				@include min(768){
+					top: 22%;
+					left: 3.5%;
+					width: 20%;
+				}
+			}
+		}
+	}
+
+
+	&.-imgBg{//背景画像
+		position: relative;
+		.c-contentsBox{
+			position: absolute;
+
+		}
+	}
+}
