@@ -15,30 +15,12 @@
 
 	&.-h-logo{
 		position: relative;
+
 		.c-contentsBox{
 			position: absolute;
 			// ヘッダーロゴ
 			&.-logo{
-				&-item01{//緑色の鳥
-					top: 51%;
-					left: 101.5%;
-					width: 6.5%;
-					@include min(768){
-						top: 17.5%;
-						left: 30.8%;
-						width: 2.3%;
-					}
-				}
-				&-item02{//黄色の鳥
-					top: 32%;
-					left: 110%;
-					width: 5%;
-					@include min(768){
-						top: 10%;
-						left: 33%;
-						width: 1.5%;
-					}
-				}
+
 			}
 			// SOLD OUT
 			&.-soldOut{

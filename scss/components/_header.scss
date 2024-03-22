@@ -24,7 +24,7 @@
 		align-items: center;
 		width: 95%;
 		height: auto;
-		padding: 18px 0px 16px;
+		padding: 8px 0px 10px;
 		margin: auto;
 		// background: #bfbebe2e;
 		@include min(768){
@@ -65,7 +65,7 @@
 				&.logo{
 					width: 50%;
 					height: auto;
-					margin: auto auto auto 0;
+					margin: 0 auto;
 					@include min(768){
 						width: calc(72%);
 						margin: auto;

@@ -162,20 +162,6 @@
 						}
 					}
 				}
-				&:nth-child(5){
-					@include max(768){
-						&::before{
-							content: "";
-							position: absolute;
-							top: 59%;
-							left: 0;
-							transform: translateY(-50%);
-							height: 40%;
-							width: 1px;
-							background: $main-color--b;
-						}
-					}
-				}
 				&::after{
 					content: "";
 					position: absolute;
@@ -227,24 +213,80 @@
 			&.-col5{
 				li{
 					width: calc(100%/3);
+					@include max(768){
+						&:nth-child(4){
+							&::before{
+								content: "";
+								position: absolute;
+								top: 59%;
+								left: 0;
+								transform: translateY(-50%);
+								height: 40%;
+								width: 1px;
+								background: $main-color--b;
+							}
+						}
+					}
 					@include min(768){width: calc(100%/5);}
 				}
 			}
 			&.-col6{
 				li{
 					width: calc(100%/3);
+					@include max(768){
+						&:nth-child(4){
+							&::before{
+								content: "";
+								position: absolute;
+								top: 59%;
+								left: 0;
+								transform: translateY(-50%);
+								height: 40%;
+								width: 1px;
+								background: $main-color--b;
+							}
+						}
+					}
 					@include min(768){width: calc(100%/6);}
 				}
 			}
 			&.-col7{
 				li{
 					width: calc(100%/4);
+					@include max(768){
+						&:nth-child(5){
+							&::before{
+								content: "";
+								position: absolute;
+								top: 59%;
+								left: 0;
+								transform: translateY(-50%);
+								height: 40%;
+								width: 1px;
+								background: $main-color--b;
+							}
+						}
+					}
 					@include min(768){width: calc(100%/7);}
 				}
 			}
 			&.-col8{
 				li{
 					width: calc(100%/4);
+					@include max(768){
+						&:nth-child(5){
+							&::before{
+								content: "";
+								position: absolute;
+								top: 59%;
+								left: 0;
+								transform: translateY(-50%);
+								height: 40%;
+								width: 1px;
+								background: $main-color--b;
+							}
+						}
+					}
 					@include min(768){width: calc(100%/8);}
 				}
 			}
